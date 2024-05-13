@@ -1,0 +1,31 @@
+<div class="grid h-screen place-items-center bg-black">
+    <div class="text-3xl">
+      <form
+        (ngSubmit)="onSubmit()"
+        class="max-w-md mx-auto bg-white p-6 rounded-lg text-black"
+      >
+        <div class="flex items-center mb-4">
+          <img
+            src="https://cdn.iconscout.com/icon/free/png-512/free-social-224-96739.png?f=webp&w=512"
+            alt=""
+            class="h-12 w-12 mr-4"
+          />
+          <div class="flex-grow">
+            <input
+              type="text"
+              [(ngModel)]="username"
+              name="username"
+              placeholder="Username on Github"
+              class="appearance-none bg-transparent border-none border-b-2 w-custom py-2 leading-tight focus:outline-none text-black"
+            />
+          </div>
+        </div>
+        <button
+          type="submit"
+          class="bg-blue-500 hover:bg-blue-700 border-blue-500 hover:border-blue-700 text-sm border-7 text-white py-1 px-2 rounded w-custom"
+        >
+          Search for Profile
+        </button>
+      </form>
+    </div>
+  </div>
